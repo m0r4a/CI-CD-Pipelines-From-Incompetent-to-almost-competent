@@ -6,6 +6,7 @@ This will README will be a tracker of my progress but you can check [the pipelin
 
 > [!NOTE]
 > Everything is meant to be ran using [act](https://github.com/nektos/act)
+> 
 > A great resource for this is [the official documentation](https://docs.github.com/en/actions) and [the  awesome list for GitHub actions](https://github.com/sdras/awesome-actions)
 
 ## GitHub Actions Pipelines
