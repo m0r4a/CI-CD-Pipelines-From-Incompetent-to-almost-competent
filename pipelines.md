@@ -20,11 +20,11 @@ Workflow for a Node.js (or TypeScript) project that runs a linter (e.g., ESLint)
 **Learning:** Configure Node environment in Actions, use cache (`actions/cache@vX` for `node_modules/` if desired), integrate linters and view their output.
 
 ### 4. Code Coverage in Python
-Similar to the test pipeline, but also generates a coverage report with coverage.py. The pipeline should store the report (artifact) or upload it to a service like Codecov.
+Similar to the test pipeline, but also generates a coverage report with coverage.py. The pipeline should store the report (artifact).
 
-**Tasks:** Run tests with coverage (`coverage run`), generate report (`coverage xml` or similar), use `actions/upload-artifact` to save results, configure secret token for Codecov (optional).
+**Tasks:** Run tests with coverage (`coverage run`), generate report (`coverage xml` or similar), use `actions/upload-artifact` to save results.
 
-**Learning:** Using artifacts in Actions to share files, managing secrets (e.g., `$GH_TOKEN`), and integration with external code analysis tools.
+**Learning:** Using artifacts in Actions to share files.
 
 ### 5. Multi-version Tests (Matrix)
 Pipeline that uses GitHub Actions' matrix strategy to run Node or Python tests across multiple interpreter or OS versions (e.g., Node 14, 16, and 18).

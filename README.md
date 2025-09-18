@@ -5,16 +5,18 @@ This is my "mini" project where I will practice by creating 30 pipelines: 15 in 
 This will README will be a tracker of my progress but you can check [the pipelines file](./pipelines.md) to read each pipeline's description.
 
 > [!NOTE]
-> Everything is meant to be ran using [act](https://github.com/nektos/act)
+> Most of this is meant to be ran using [act](https://github.com/nektos/act)
 > 
-> A great resource for this is [the official documentation](https://docs.github.com/en/actions) and [the  awesome list for GitHub actions](https://github.com/sdras/awesome-actions)
+> A great resource for this project is [the official documentation](https://docs.github.com/en/actions) and [the  awesome list for GitHub actions](https://github.com/sdras/awesome-actions)
+>
+> If you use this repo's `.actrc` when you work on artifact's they will be stored in `./artifacts` by default see [this issue](https://github.com/nektos/act/issues/329) and `act help | grep artifact` for more details.
 
 ## GitHub Actions Pipelines
 
 - [x] 1. Basic Pipeline (Python "Hello World")
-- [ ] 2. Unit Tests in Python
-- [ ] 3. Lint and Tests in Node.js/TypeScript
-- [ ] 4. Code Coverage in Python
+- [x] 2. Unit Tests in Python
+- [x] 3. Lint and Tests in Node.js/TypeScript
+- [x] 4. Code Coverage in Python
 - [ ] 5. Multi-version Tests (Matrix)
 - [ ] 6. Multi-language Pipeline (Python + Go)
 - [ ] 7. Build and Publish Docker Image
