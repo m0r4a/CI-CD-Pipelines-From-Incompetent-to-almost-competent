@@ -1,0 +1,28 @@
+name: 3_lint_test_js
+
+on: [push]
+
+jobs:
+
+  unitest_and_lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22.19.x"
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./scripts/pipeline_3
+
+      - name: Run linter
+        run: npm run lint
+        working-directory: ./scripts/pipeline_3
+
+      - name: Run tests
+        run: npm test
+        working-directory: ./scripts/pipeline_3
