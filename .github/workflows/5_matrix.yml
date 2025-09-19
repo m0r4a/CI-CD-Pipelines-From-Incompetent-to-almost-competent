@@ -1,0 +1,25 @@
+name: 5_matrix
+
+on: [push]
+
+jobs:
+
+  matrix_job:
+    strategy:
+      matrix:
+        python-version: [3.8, 3.13]
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run the code
+        run: python main.py
+        working-directory: ./scripts/pipeline_5
