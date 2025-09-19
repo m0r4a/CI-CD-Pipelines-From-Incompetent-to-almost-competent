@@ -33,6 +33,8 @@ Pipeline that uses GitHub Actions' matrix strategy to run Node or Python tests a
 
 **Learning:** The matrix strategy allows running jobs in parallel for different configurations without duplicating the workflow. This lets you verify your project works in different environments (operating systems, language versions, etc.).
 
+> With the current config of `act` this one doesn't work, you have to use github's servers
+
 ### 6. Multi-language Pipeline (Python + Go)
 A workflow with at least two parallel jobs: one to test a small Python project and another to compile/test a Go project.
 
