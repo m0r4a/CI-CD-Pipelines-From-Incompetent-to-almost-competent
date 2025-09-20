@@ -1,0 +1,28 @@
+name: 6_multi_language
+
+on: [push]
+
+jobs:
+
+  multi_lang_pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.7'
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: '1.25'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run the server and do the request
+        run: go run ./server.go & python main.py
+        working-directory: ./scripts/pipeline_6
