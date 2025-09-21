@@ -1,0 +1,6 @@
+#!/bin/bash
+
+(
+  cd "$(dirname "${BASH_SOURCE[0]}")/../../" || exit
+  act -j build_publish_docker --var-file scripts/pipeline_7/.vars --secret-file scripts/pipeline_7/.secrets
+)

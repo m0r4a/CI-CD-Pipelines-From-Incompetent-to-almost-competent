@@ -19,7 +19,7 @@ This will README will be a tracker of my progress but you can check [the pipelin
 - [x] 4. Code Coverage in Python
 - [x] 5. Multi-version Tests (Matrix)
 - [x] 6. Multi-language Pipeline (Python + Go)
-- [ ] 7. Build and Publish Docker Image
+- [x] 7. Build and Publish Docker Image
 - [ ] 8. Publish Package to PyPI
 - [ ] 9. Publish Package to npm
 - [ ] 10. Java Project Build and Tests (Maven/Gradle)
